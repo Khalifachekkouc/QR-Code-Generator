@@ -1,2 +1,2 @@
 # QR-Code-Generator
-A clean, responsive, and minimalist QR Code Generator web application. Users can enter any text or URL to instantly generate a high-quality QR code
+A lightweight, user-friendly web application that allows users to instantly generate QR codes from URLs or plain text. Built with a focus on simplicity and a clean UI/UX.
