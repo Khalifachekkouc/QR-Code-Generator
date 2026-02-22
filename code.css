@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
+  background-size: 20px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paper-card {
+  background: white;
+  padding: 40px 30px;
+  position: relative;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 8px solid #2a75ff;
+}
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 100px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+header h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+header p {
+  font-family: "Architects Daughter", cursive;
+  font-size: 0.95rem;
+  color: #444;
+}
+.form {
+  margin: 20px 0 25px;
+}
+.form input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.2rem;
+  /* letter-spacing: 2px; */
+  border: 2px solid #eee;
+  background: #fdfdfd;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form input:focus {
+  border-color: #2a75ff;
+}
+.form button {
+  width: 100%;
+  padding: 15px;
+  background: #2a75ff;
+  color: white;
+  border: none;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+.form button:hover {
+  background: #2a75ff;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+.qr-code {
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #333;
+  margin-top: 10px;
+}
+.paper-card.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+}
